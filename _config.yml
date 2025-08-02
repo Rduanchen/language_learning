@@ -13,9 +13,9 @@ timezone: "Asia/Taipei"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://Bosh-Kuo.github.io/launguage_learning
-root: /launguage_learning/
-permalink: :year/:month/:day/:title/
+url: http://rduanchen.github.io/language_learning
+root: /language_learning/
+permalink: :categories/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -103,7 +103,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git # 使用 Git 部署
-  repo: https://github.com/Rduanchen/launguage_learning.git # repo clone link
+  repo: https://github.com/Rduanchen/language_learning.git # repo clone link
   branch: gh-pages # hexo 會將靜態網頁內容放到這個repo分支
 
 tts_learning:
