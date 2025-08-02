@@ -105,7 +105,6 @@ deploy:
   type: git # 使用 Git 部署
   repo: https://github.com/Rduanchen/launguage_learning.git # repo clone link
   branch: gh-pages # hexo 會將靜態網頁內容放到這個repo分支
-  message: "First Commit" # Commit 訊息
 
 tts_learning:
   debug: false

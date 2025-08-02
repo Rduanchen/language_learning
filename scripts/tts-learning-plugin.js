@@ -5,6 +5,7 @@ const path = require('path');
 const pluginConfig = hexo.config.tts_learning || {};
 const DEBUG_MODE = pluginConfig.debug === true || hexo.env.debug;
 const isDarkMode = pluginConfig.darkmode === true || hexo.theme.config.darkmode === true;
+const URL_ROOT = hexo.config.root || '/';
 
 function debugLog(...args) {
   if (DEBUG_MODE) {
@@ -131,10 +132,10 @@ hexo.extend.tag.register('tts_learning', function (args) {
 
 // 強制確保 JS 和 CSS 文件被複製到輸出目錄
 hexo.extend.generator.register('tts_learning_assets', function () {
-  const jsPath = path.join(hexo.source_dir, 'js/tts-learning.js');
-  let cssPath = path.join(hexo.source_dir, 'css/tts-learning-bright.css');
+  const jsPath = path.join(hexo.source_dir, `${URL_ROOT}js/tts-learning.js`);
+  let cssPath = path.join(hexo.source_dir, `${URL_ROOT}css/tts-learning-bright.css`);
   if (isDarkMode) {
-    cssPath = path.join(hexo.source_dir, 'css/tts-learning-dark.css');
+    cssPath = path.join(hexo.source_dir, `${URL_ROOT}css/tts-learning-dark.css`);
     debugLog('Dark mode is enabled, using dark CSS:', cssPath);
   }
 
