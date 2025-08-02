@@ -132,10 +132,11 @@ hexo.extend.tag.register('tts_learning', function (args) {
 
 // 強制確保 JS 和 CSS 文件被複製到輸出目錄
 hexo.extend.generator.register('tts_learning_assets', function () {
-  const jsPath = path.join(hexo.source_dir, `${URL_ROOT}js/tts-learning.js`);
-  let cssPath = path.join(hexo.source_dir, `${URL_ROOT}css/tts-learning-bright.css`);
+  console.log(URL_ROOT);
+  const jsPath = path.join(hexo.source_dir, `js/tts-learning.js`);
+  let cssPath = path.join(hexo.source_dir, `css/tts-learning-bright.css`);
   if (isDarkMode) {
-    cssPath = path.join(hexo.source_dir, `${URL_ROOT}css/tts-learning-dark.css`);
+    cssPath = path.join(hexo.source_dir, `css/tts-learning-dark.css`);
     debugLog('Dark mode is enabled, using dark CSS:', cssPath);
   }
 
@@ -166,8 +167,8 @@ hexo.extend.generator.register('tts_learning_assets', function () {
 
 // 注入腳本與樣式到 HTML
 hexo.extend.filter.register('after_render:html', function (str) {
-  const scriptTag = `<script src="/js/tts-learning.js" defer></script>`;
-  const styleTag = `<link rel="stylesheet" href="/css/tts-learning.css">`;
+  const scriptTag = `<script src="${URL_ROOT}js/tts-learning.js" defer></script>`;
+  const styleTag = `<link rel="stylesheet" href="${URL_ROOT}css/tts-learning.css">`;
 
   debugLog('Injecting script and style tags...');
 
