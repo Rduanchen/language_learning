@@ -1,0 +1,134 @@
+.tts-learning-card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sentence-container {
+  margin-bottom: 15px;
+}
+
+.sentence {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border-left: 4px solid #007bff;
+}
+
+.sentence .word {
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.sentence .word:hover {
+  background-color: #e3f2fd;
+}
+
+.translation {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #fff3cd;
+  border-radius: 4px;
+}
+
+.note {
+  color: #28a745;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  padding: 8px;
+  background-color: #d4edda;
+  border-radius: 4px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #1e7e34;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #bd2130;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.recording-status {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.recording {
+  color: #dc3545;
+}
+
+.language-info {
+  font-size: 0.8em;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.audio-controls {
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
