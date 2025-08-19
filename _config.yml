@@ -8,14 +8,16 @@ subtitle: ""
 description: "目前為外國語言的初學者，利用這個網站分享一些語言學習的過程"
 keywords: language learning, spanish, german, 語言學習, 短句, 西班牙文, 英文
 author: Rduan
-language: en
+language:
+  - zh-tw
+  - en
 timezone: "Asia/Taipei"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://rduanchen.github.io/language_learning
 root: /language_learning/
-permalink: :category/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks

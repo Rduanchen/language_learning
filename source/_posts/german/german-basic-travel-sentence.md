@@ -4,10 +4,13 @@ date: 2025-08-02 16:15:35
 layout: german
 type: german
 categories:
-  - 語言學習
   - german
+  - 德語
 tags:
   - 德語
+  - german
+  - travel
+  - 旅遊
 ---
 
 # Common travel sentences of German

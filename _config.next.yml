@@ -15,9 +15,9 @@ menu:
   home: / || fa fa-home
   # about: /about/ || fa fa-user
   # index: /index || fa fa-home
-  german: /german/ || fa fa-language
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
+  german: /categories/german/ || fa fa-language
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
@@ -29,3 +29,5 @@ tagcloud:
   amount: 200 # Total amount of tags
   orderby: name # Order of tags
   order: 1 # Sort order
+
+language_switcher: true
